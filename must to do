@@ -1,0 +1,20 @@
+install react: npx create-react-app my app
+
+install react router-dom agar bisa ngelink ke halaman lain: npm instaall react-router-dom
+
+dan install node-sass untuk css processor: npm install node-sass
+
+buat folder element
+buat folder button didalam folder element dan buat tiga file yaitu:
+    index.js, 
+    index.sass, 
+    index.test.js
+download source file bootstrap dan copy folder scss paste kedalam folder src/assets, 
+    dan hapus file bootstrap.grid dan bootstrap-reboot, 
+    ganti filename bootstrap.scss menjadi style.scss
+
+import file style.scss di app.js import from 'assets/scss/style.scss'
+
+bikin file jsconfig.json di root folder agar bisa mengakses folder2 lain dengan mudah
+
+di file element/button/index.js import react router-dom dan import propTypes, 
