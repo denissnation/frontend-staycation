@@ -18,3 +18,8 @@ import file style.scss di app.js import from 'assets/scss/style.scss'
 bikin file jsconfig.json di root folder agar bisa mengakses folder2 lain dengan mudah
 
 di file element/button/index.js import react router-dom dan import propTypes, 
+
+tips tambahkan di assets/scss/utilities/_text.scss :
+    @each $color, $value in $grays {
+	    @include text-emphasis-variant(".text-gray-#{$color}", $value, true);
+    }
