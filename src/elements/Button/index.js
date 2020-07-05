@@ -46,7 +46,7 @@ export default function Button(props) {
 			);
 		} else {
 			return (
-				<Link to={props.href} className={className.join(' ')} style={props.style} onClick={onClick()}>
+				<Link to={props.href} className={className.join(' ')} style={props.style} onClick={onClick}>
 					{props.children}
 				</Link>
 			);
@@ -54,7 +54,7 @@ export default function Button(props) {
 	}
 
 	return (
-		<button to={props.href} className={props.className.join(' ')} style={props.style} onClick={onClick()}>
+		<button to={props.href} className={className.join(' ')} style={props.style} onClick={onClick}>
 			{props.children}
 		</button>
 	);
